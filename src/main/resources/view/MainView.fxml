@@ -13,34 +13,33 @@
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vminakov.javafxfilecopy.app.controller.MainController">
-    <VBox alignment="TOP_CENTER" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0"
-          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <VBox alignment="TOP_CENTER" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="10.0"/>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
         </padding>
         <HBox alignment="CENTER" fillHeight="false" prefWidth="200.0" VBox.vgrow="NEVER">
             <GridPane>
                 <columnConstraints>
-                    <ColumnConstraints hgrow="NEVER" maxWidth="132.5" minWidth="10.0" prefWidth="132.5"/>
-                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="694.0" minWidth="10.0" prefWidth="667.5"/>
+                    <ColumnConstraints hgrow="NEVER" maxWidth="132.5" minWidth="10.0" prefWidth="132.5" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="694.0" minWidth="10.0" prefWidth="667.5" />
                 </columnConstraints>
                 <rowConstraints>
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 </rowConstraints>
-                <Label text="Source file:"/>
-                <Label text="Destination file:" GridPane.rowIndex="1"/>
-                <TextField fx:id="sourceFilePathText" GridPane.columnIndex="1"/>
-                <TextField fx:id="destinationFilePathText" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label text="Source file:" />
+                <Label text="Destination file:" GridPane.rowIndex="1" />
+                <TextField fx:id="sourceFilePathText" GridPane.columnIndex="1" />
+                <TextField fx:id="destinationFilePathText" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             </GridPane>
         </HBox>
-        <HBox alignment="TOP_RIGHT" prefWidth="200.0" VBox.vgrow="NEVER">
-            <Button fx:id="copyButton" mnemonicParsing="false" text="Copy"/>
+        <HBox alignment="TOP_RIGHT" prefWidth="200.0" spacing="5.0" VBox.vgrow="NEVER">
+         <Button mnemonicParsing="false" text="Check UI" />
+            <Button fx:id="copyButton" mnemonicParsing="false" text="Copy" />
         </HBox>
         <HBox fx:id="progressContainer" alignment="CENTER_RIGHT" prefWidth="200.0" spacing="5.0" visible="false">
-            <ProgressBar fx:id="fileCopyProgressBar" prefHeight="20.0" prefWidth="719.0" progress="0.0"
-                         HBox.hgrow="ALWAYS"/>
-            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel"/>
+            <ProgressBar fx:id="fileCopyProgressBar" prefHeight="20.0" prefWidth="719.0" progress="0.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
         </HBox>
     </VBox>
 </AnchorPane>
