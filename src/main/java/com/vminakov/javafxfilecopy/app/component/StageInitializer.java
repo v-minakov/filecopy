@@ -25,7 +25,7 @@ public class StageInitializer implements ApplicationListener<StageReadyEvent> {
         Stage stage = event.stage;
         stage.setTitle(captionText);
         Parent parent = fxWeaver.loadView(MainController.class);
-        Scene scene = new Scene(parent, 400, 300);
+        Scene scene = new Scene(parent);
         stage.setScene(scene);
         stage.show();
     }
